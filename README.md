@@ -15,7 +15,7 @@ UiPath 自作ライブラリのリポジトリ
 
 app ： アプリケーションを起動しているプログラム名  
 cls ： Automation SpyやAutoItで取得できるウィンドウクラス名  
-title ： そのウィンドウのウィンドウヘッダ(HTMLのHEADタグにあるtitleに相当) 
+title ： そのウィンドウのウィンドウヘッダ(HTMLのHEADタグにあるtitleに相当)  
 ctrlid ：ウィンドウ上にあるUIの番号  
 title： ctrlidに関連するUIのキャプション名  
 
@@ -29,7 +29,7 @@ title： ctrlidに関連するUIのキャプション名
 <wnd ctrlid='1' title='OK' />
 ```
 
-Webページからのメッセージのclsは#32770で固定
+Webページからのメッセージのclsは#32770で固定  
 複数回取得を試みたが同じだった。
 
 他、HTMLタグを捉えたときのセレクター
