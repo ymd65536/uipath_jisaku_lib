@@ -79,7 +79,7 @@
           </ui:CursorPosition>
         </ui:Click.CursorPosition>
         <ui:Click.Target>
-          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="39303f10c7631b8a1b31dd3aa0cef7c4" Selector="&lt;wnd app='iexplore.exe' cls='#32770' title='Web ページからのメッセージ' /&gt;&lt;wnd ctrlid='1' title='OK' /&gt;" WaitForReady="INTERACTIVE">
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="39303f10c7631b8a1b31dd3aa0cef7c4" Selector="&lt;wnd app='iexplore.exe' cls='#32770' title='Web ページからのメッセージ' /&gt;&lt;wnd omit:ctrlid='1' title='OK' /&gt;" WaitForReady="INTERACTIVE">
             <ui:Target.TimeoutMS>
               <InArgument x:TypeArguments="x:Int32" />
             </ui:Target.TimeoutMS>
@@ -95,7 +95,7 @@
           <av:PointCollection x:Key="ConnectorLocation">300,235.5 300,285.5</av:PointCollection>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <DoWhile sap2010:Annotation.AnnotationText="？で聞いてくる系のWebページからのメッセージを処理する。&#xD;&#xA;" DisplayName="Webページからのメッセージ" sap:VirtualizedContainerService.HintSize="484,310" sap2010:WorkflowViewState.IdRef="DoWhile_1">
+      <DoWhile sap2010:Annotation.AnnotationText="？で聞いてくる系のWebページからのメッセージを処理する。&#xA;" DisplayName="Webページからのメッセージ" sap:VirtualizedContainerService.HintSize="200,108" sap2010:WorkflowViewState.IdRef="DoWhile_1">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
@@ -104,7 +104,7 @@
         <DoWhile.Condition>[Webページからのメッセージ = False]</DoWhile.Condition>
         <ui:UiElementExists DisplayName="Webページからのメッセージ" Exists="[Webページからのメッセージ]" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="UiElementExists_1">
           <ui:UiElementExists.Target>
-            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="2982dbfb9b3cc446a3da45263fc3ee07" Selector="&lt;wnd app='iexplore.exe' cls='#32770' title='Web ページからのメッセージ' /&gt;&lt;wnd ctrlid='1' title='OK' /&gt;" TimeoutMS="3000" WaitForReady="INTERACTIVE" />
+            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="2982dbfb9b3cc446a3da45263fc3ee07" Selector="&lt;wnd app='iexplore.exe' cls='#32770' title='Web ページからのメッセージ' /&gt;&lt;wnd omit:ctrlid='1' title='OK' /&gt;" TimeoutMS="3000" WaitForReady="INTERACTIVE" />
           </ui:UiElementExists.Target>
         </ui:UiElementExists>
       </DoWhile>
